@@ -1,7 +1,7 @@
-require 'mustache'
 require_relative 'src/action'
+require_relative 'src/wub'
 
-class Main
+class Main < Wub
   def call(env)
     header = {'Content-Type' => 'text/html'}
 
@@ -15,20 +15,5 @@ class Main
     else
       response(404, header) { render('404') }
     end
-  end
-
-  private
-
-  def response(status, header, body='')
-    body = yield if block_given?
-    [status, header, [body]]
-  end
-
-  def render(file, context={})
-    Mustache.render(File.read("views/#{file}.mustache"), context)
-  end
-
-  def to_context(hash)
-    { entries: hash.to_a.map { |k, v| { key: k.to_s, value: v.to_s } } }
   end
 end
