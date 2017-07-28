@@ -1,10 +1,11 @@
 
 ![Beyond lies the wub](https://www.gutenberg.org/files/28554/28554-h/images/001.png)
+
 [_"The wub, sir," Peterson said. "It spoke!"_](https://www.gutenberg.org/files/28554/28554-h/28554-h.htm)
 
 ## Background
 
-This is a very first step in web development, building a super simple web service using Rack, freely following [Launch School](https://launchschool.com)'s [Rack tutorial](https://launchschool.com/blog/growing-your-own-web-framework-with-rack-part-1).
+This is a very first step in web development, building a super simple web service using Rack, following [Launch School](https://launchschool.com)'s [Rack tutorial](https://launchschool.com/blog/growing-your-own-web-framework-with-rack-part-1).
 
 ## Usage
 
